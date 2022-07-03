@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiendauy</title>
+    <link rel="shortcut icon" href="img/LogoShortucutS.png">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/estilos.css">
+    <script src="https://kit.fontawesome.com/77dcfcbdb0.js" crossorigin="anonymous"></script>
+    <style>
+        .fondo{
+            background-image: url("img/bgimg.jpg");
+            height: 60px;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+    
+</head>
+<body>
+
+        <header>
+            <div class="logo">
+                <img src="./img/Header/LogoPrincipal.svg"> 
+            </div>
+        
+            <div class="nave">
+                <nav> 
+                    <a href= "./index.html" class="mec"> Inicio</a>
+                    <a href="./Registro.html" class="mec"> Registrate</a>
+                    <a href="./Micarrito.html" class="mec"> Mi Carrito</a>
+                    <a href="./Experiencia.html" class="mec"> Cuentanos tu experiencia</a>
+                    <a href="./Categorías.html" class="mec"> Categorias</a>
+                </nav>
+            </div>
+
+        </header>
+        <div class="fondo"></div>
+    
+        <hr>
+
+
+
+
+
+
+    <div class="fieldsetContenedor">
+        <legend class="Registrotext">
+            <h2> Registrate</h2>
+        </legend>
+
+    <form class="sendRegistro" action="Enviar.php" method="get">
+
+        <div class="holderRegistro">
+            <input  class="holder" type="text" id="nombre" placeholder="Ingrese su nombre" required>
+        
+            <input class="holder" type="email" id="email" placeholder="Ingrese su correo" required>
+        
+            <input class="holder" type="password" id="pass" placeholder="Crea tu contraseña" required>
+        </div>
+
+        <br>
+
+        <div class="radioBottoms">
+            <ul>
+                Genero
+                <select>
+                    <option disabled>Seleccione</option>
+                    <option>Hombre</option>
+                    <option>Mujer</option>
+                    <option>Prefiero no decirlo</option>
+                </select>
+            </ul>
+        </div>    
+
+        <br>
+
+        <div class="fechaDeNacimiento">
+            <label>
+               <label for="birthdate">Fecha de nacimiento</label>
+                <input type="date" id="birthdate" required>
+            </label>
+        </div>
+
+        <br>
+
+
+        <div class="terminosCondiciones">
+            <input type="checkbox" name="Acepto" id="" required>Acepto terminos y condiciones.
+            <input type="checkbox" name="News" id="">Deseo recibir novedades por mail.
+        </div>
+    
+        <br>
+        <div class="sendBottom">
+            <input type="submit" value="Enviar">
+        </div>
+        <!-- <input type="reset" value="Borrar"> -->
+
+     </form>
+    </div>
+
+
+   
+   
+   
+   
+   
+   
+ 
+    <footer class="pie-pagina">
+
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="./img/Header/Logoazul.svg" alt="Logo">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>Somos un Ecommerce Uruguayo que reune millones de productos brindando oportunidad a grandes y pequeños vendedores.</p>
+            </div>
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="red-social">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                </div>
+            </div>
+
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2022 <b>Tienda.UY</b> - Todos los derechos reservados.</small>
+
+        </div>
+    </footer>
+
+
+
+
+</body>
+</html>
