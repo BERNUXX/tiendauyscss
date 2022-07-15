@@ -1,0 +1,37 @@
+ header{ 
+     display: flex;
+    grid-template-columns: 5% auto auto 5%;
+    padding: 0.625rem 0rem;
+    background-color: rgb(119, 240, 240);
+    justify-content: space-between;
+     div {
+        img{
+            height: 4.625rem;
+            margin: 0.313rem; 
+        }
+        a {
+            margin-inline: 5px;
+            letter-spacing: 0.01px;
+            word-spacing: 5px;
+            display: inline;
+            text-decoration: none;
+            color: white;
+            padding-inline-end: auto;
+         }
+        }
+        .nave{
+            margin-top: 1.675rem;
+            font-size: 1rem;
+            /* width: 855px; */
+            display: flex;
+            justify-content: flex-end;
+        }
+        
+    }
+.name {
+        display: flex;
+        height: 0rem;
+        margin-bottom: -1rem;
+        justify-content: space-around;
+    }
+   
