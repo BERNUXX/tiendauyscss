@@ -73,14 +73,16 @@ header .ulIndex a {
     z-index: 9;
     transition: all 0.5s;
   }
-  .check:checked ~ div ul.Index {
-    margin-left: 0px;
-  }
-  header {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
+.check:checked ~ ul.ulIndex {
+  margin-left: 0px;
+}
+
+header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
 body {
   font-family: "Quicksand", sans-serif;
 }
