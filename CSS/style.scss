@@ -15,10 +15,7 @@ body {
 
 .gridIndex {
     display: grid;
-    grid-template-columns: 10% auto 10%;
-    grid-template-columns: -webkit-max-content;
     grid-template-columns: max-content;
-    grid-template-areas: 50% 50%;
     justify-content: space-around;
 }
   
@@ -103,3 +100,9 @@ body {
     margin-bottom: 20px;
   }
 
+  @media screen and (max-width: 890px) {
+    .tarjetas {
+        grid-template-columns: repeat(3, 1fr);
+        
+    }
+  }
