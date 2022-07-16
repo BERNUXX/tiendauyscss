@@ -1,37 +1,89 @@
+ * {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+ }
  header{ 
-     display: flex;
-    grid-template-columns: 5% auto auto 5%;
+    display: grid;
+    grid-template-columns: 300px 0 auto;
+    height: 100px;
     padding: 0.625rem 0rem;
     background-color: rgb(119, 240, 240);
     justify-content: space-between;
-     div {
+     .logo {
         img{
             height: 4.625rem;
             margin: 0.313rem; 
         }
-        a {
-            margin-inline: 5px;
-            letter-spacing: 0.01px;
-            word-spacing: 5px;
-            display: inline;
-            text-decoration: none;
-            color: white;
-            padding-inline-end: auto;
-         }
+     }
+        .nave {
+            margin-top: 1.5rem;
+            margin-right: 1rem;
+            .check {
+                float:right;
+                display: none;
+            }
         }
-        .nave{
-            margin-top: 1.675rem;
-            font-size: 1rem;
-            /* width: 855px; */
-            display: flex;
-            justify-content: flex-end;
+    .bar-btn {
+        float: right;
+        color: blue;
+        cursor: pointer;
+                
+                
+
+            }
+            .ulIndex {
+                display: inline-flex;
+                a{
+                    color: white;
+                    padding-left: 1rem;
+                }
+            }
+
         }
         
-    }
+        
+    
 .name {
         display: flex;
         height: 0rem;
         margin-bottom: -1rem;
         justify-content: space-around;
     }
+
+    .fa-solid.fa-bars{
+        font-size: 2rem;
+    }
    
+
+    @media screen and (min-width: 890px) {
+        .bar-btn {
+            display: none;
+        }
+    }
+    @media screen and (max-width: 890px) {
+        .ulIndex {
+            flex-direction: column;
+            align-items: center;
+            background-color: red;
+            width: 100%;
+            margin-left: 897px;
+            font-size: 4rem;
+            position: absolute;
+            z-index: 9;
+            transition: all 0.5s;
+        }
+
+        }
+        .check:checked ~ ul.ulIndex {
+            margin-left: 0px;
+
+        }
+        header {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        
+    }

@@ -4,11 +4,87 @@
   box-sizing: border-box;
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 300px 0 auto;
+  height: 100px;
+  padding: 0.625rem 0rem;
+  background-color: rgb(119, 240, 240);
+  justify-content: space-between;
+}
+header .logo img {
+  height: 4.625rem;
+  margin: 0.313rem;
+}
+header .nave {
+  margin-top: 1.5rem;
+  margin-right: 1rem;
+}
+header .nave .check {
+  float: right;
+  display: none;
+}
+header .bar-btn {
+  float: right;
+  color: blue;
+  cursor: pointer;
+}
+header .ulIndex {
+  display: inline-flex;
+}
+header .ulIndex a {
+  color: white;
+  padding-left: 1rem;
+}
+
+.name {
+  display: flex;
+  height: 0rem;
+  margin-bottom: -1rem;
+  justify-content: space-around;
+}
+
+.fa-solid.fa-bars {
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 890px) {
+  .bar-btn {
+    display: none;
+  }
+}
+@media screen and (max-width: 890px) {
+  .ulIndex {
+    flex-direction: column;
+    align-items: center;
+    background-color: red;
+    width: 100%;
+    margin-left: 897px;
+    font-size: 4rem;
+    position: absolute;
+    z-index: 9;
+    transition: all 0.5s;
+  }
+  .check:checked ~ div ul.Index {
+    margin-left: 0px;
+  }
+  header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 body {
   font-family: "Quicksand", sans-serif;
 }
 
-/* INDEX */
 .gridIndex {
   display: grid;
   grid-template-columns: 10% auto 10%;
