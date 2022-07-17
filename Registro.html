@@ -3,23 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Somos un Ecommerce Uruguayo que reune millones de productos brindando oportunidad a grandes y pequeños vendedores." />
+    <meta name="keywords" content="tienda online, tienda uruguay, tiendauy," />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tiendauy</title>
+    
+    
     <link rel="shortcut icon" href="img/LogoShortucutS.png">
     <!-- Font -->
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./CSS/estilos.css">
+    <link rel="stylesheet" href="./CSS/style.css">
     <script src="https://kit.fontawesome.com/77dcfcbdb0.js" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <style>
         .fondo{
             background-image: url("img/bgimg.jpg");
-            height: 60px;
+            height: 3.75rem;
             background-repeat: no-repeat;
             background-size: cover;
         }
     </style>
+    
     
 </head>
 <body>
@@ -29,15 +37,32 @@
                 <img src="./img/Header/LogoPrincipal.svg"> 
             </div>
         
-            <div class="nave">
-                <nav> 
-                    <a href= "./index.html" class="mec"> Inicio</a>
-                    <a href="./Registro.html" class="mec"> Registrate</a>
-                    <a href="./Micarrito.html" class="mec"> Mi Carrito</a>
-                    <a href="./Experiencia.html" class="mec"> Cuentanos tu experiencia</a>
-                    <a href="./Categorías.html" class="mec"> Categorias</a>
-                </nav>
-            </div>
+            <nav class="navbar navbar-expand-lg navbar-light ">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./index.html">Inicio </a>
+                      </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="./subpages/Categorías.html">Categorías <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./subpages/Experiencia.html">Experiencia</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./subpages/Micarrito.html">Mi Carrito</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./subpages/Registro.html">Registro</a>
+                    </li>
+                    
+                  </ul>
+                </div>
+            </nav>
 
         </header>
         <div class="fondo"></div>

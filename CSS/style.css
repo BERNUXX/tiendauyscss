@@ -84,6 +84,88 @@ header .bar-btn .ulIndex a {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+/* Footer*/
+.pie-pagina {
+  width: 100%;
+  background-color: #6dc2f6;
+  bottom: 0px;
+}
+.pie-pagina .grupo-1 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 30px 0px;
+  position: relative;
+}
+.pie-pagina .grupo-1 .box figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pie-pagina .grupo-1 img {
+  width: 200px;
+}
+.pie-pagina .grupo-1 .box h2 {
+  color: white;
+  margin-bottom: 20px;
+  font-size: 23px;
+}
+.pie-pagina .grupo-1 .box p {
+  color: #efefef;
+  margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  margin-right: 5px;
+  background-color: aqua;
+  text-align: center;
+  transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a :hover {
+  color: black;
+}
+
+@media screen and (max-width: 800px) { /* t */
+  .pie-pagina .grupo-1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 50px;
+    padding: 40px 0px;
+  }
+  .pie-pagina .grupo-1 .box {
+    margin-left: 30px;
+  }
+}
+section .sinCompras {
+  display: grid;
+  grid-template-columns: 10% auto 10%;
+  height: 100vh;
+  justify-items: center;
+}
+section .sinCompras .sinComprasText {
+  width: 100%;
+  height: 100vh;
+  border-radius: 5px;
+  margin-top: 1rem;
+  background-color: skyblue;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-items: center;
+}
+section .sinCompras .sinComprasText .texto {
+  width: 19rem;
+  height: auto;
+  margin-top: 13rem;
+}
+
 body {
   font-family: "Quicksand", sans-serif;
 }
@@ -170,8 +252,41 @@ body {
   margin-bottom: 20px;
 }
 
+/* COMPRAS */
+section .sinCompras {
+  display: grid;
+  grid-template-columns: 10% auto 10%;
+  height: 100vh;
+  justify-items: center;
+}
+section .sinCompras .sinComprasText {
+  width: 100%;
+  height: 100vh;
+  border-radius: 5px;
+  margin-top: 1rem;
+  background-color: skyblue;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-items: center;
+}
+section .sinCompras .sinComprasText .texto {
+  width: 19rem;
+  height: auto;
+  margin-top: 13rem;
+}
+
 @media screen and (max-width: 890px) {
   .tarjetas {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 675px) {
+  .tarjetas {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 460px) {
+  .tarjetas {
+    grid-template-columns: repeat(1, 1fr);
   }
 }/*# sourceMappingURL=style.css.map */
